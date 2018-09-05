@@ -16,11 +16,18 @@ function ReposListItem(props){
           padding: 1vw;
           margin: 1vw 0;
           background-color: white;
+          display: grid;
+          grid-template-columns: 5% auto auto auto;
+          grid-template-areas:
+            "image name . star"
+            "image description . star";
+
         }
 
         .repos-list-item-image-wrap{
-          width: 5%;
           display: inline-block;
+          grid-area: image;
+          align-self: center;
         }
 
         .repos-list-item-image{
@@ -29,19 +36,30 @@ function ReposListItem(props){
         }
 
         .repos-list-item-name{
-
+          display: inline-block;
+          grid-area: name;
+          margin-left: 1.1vw;
+          color: black;
+          font-size: 1.2em;
         }
 
         .repos-list-item-description{
           display: inline-block;
-          max-width:50%;
+          max-width:auto;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          grid-area: description;
+          margin-left: 1.1vw;
+          font-size: 0.9em;
+          color: #adadad;
         }
 
         .repos-list-item-stars{
           display: inline-block;
+          grid-area: star;
+          align-self: center;
+          justify-self: end;
         }
 
 

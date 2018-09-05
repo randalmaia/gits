@@ -11,8 +11,8 @@ function ReposList(props){
       <div className="row">
           <div className="col-xs-12 ">
             <div className="repos-list-container-links">
-              <a href="#" className="repos-list-container-title">Popular Javascript repos</a>
-              <a href="#" className="repos-list-container-title repos-list-container-title--disabled">Other good repos to contribute</a>
+              <a href="#" className="repos-list-container-link">Popular Javascript repos</a>
+              <a href="#" className="repos-list-container-link repos-list-container-title--disabled">Other good repos to contribute</a>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ function ReposList(props){
           border-bottom: 1px solid #adadad;
         }
 
-        .repos-list-container-title{
+        .repos-list-container-link{
           font-size: 1.2em;
           padding-bottom:10px;
           border-bottom: 3px solid black;
@@ -44,7 +44,7 @@ function ReposList(props){
           text-decoration: none;
         }
 
-        .repos-list-container-title:hover{
+        .repos-list-container-link:hover{
           color: #12c2e9;
           border-bottom: 3px solid #12c2e9;
         }

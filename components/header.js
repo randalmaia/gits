@@ -45,7 +45,7 @@ export default class extends React.Component {
 
           .header-container-slogan{
             font-size: 3.5vw;
-            margin: 1em 0;
+            margin: 0.6em 0 1.6em;
           }
 
           .header-container-slogan-select{
