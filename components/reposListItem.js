@@ -7,27 +7,26 @@ function ReposListItem(props){
       <div className="repos-list-item-image-wrap">
         <img className="repos-list-item-image" src={props.repository.owner.avatar_url} />
       </div>
-      <a className="repos-list-item-name" target="_blank" href="{html_url}">{props.repository.full_name}</a>
-      <p className="repos-list-item-description">{props.repository.description}</p>
-      <span className="repos-list-item-stars">⭐ {props.repository.stargazers_count}</span>
+      <a className="repos-list-item-name" target="_blank" href="{html_url}">{props.repository.name}</a>
+      <span className="repos-list-item-description">{props.repository.description}</span>
+      <a href={props.repository.stargazers_count} className="repos-list-item-action">see good issues</a>
 
       <style jsx>{`
         .repos-list-item{
-          padding: 1vw;
           margin: 1vw 0;
           background-color: white;
           display: grid;
-          grid-template-columns: 5% auto auto auto;
+          grid-template-columns: 5% minmax(auto, max-content) minmax(auto, max-content) auto;
+          grid-column-gap: 1.1vw;
+          grid-auto-columns: min-content;
+          grid-auto-flow: row;
+          align-content: start;
           grid-template-areas:
-            "image name . star"
-            "image description . star";
-
+            "image name description action";
         }
 
         .repos-list-item-image-wrap{
-          display: inline-block;
           grid-area: image;
-          align-self: center;
         }
 
         .repos-list-item-image{
@@ -38,28 +37,38 @@ function ReposListItem(props){
         .repos-list-item-name{
           display: inline-block;
           grid-area: name;
-          margin-left: 1.1vw;
           color: black;
           font-size: 1.2em;
+          align-self: center;
         }
 
         .repos-list-item-description{
           display: inline-block;
-          max-width:auto;
+          max-width:100%;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
           grid-area: description;
-          margin-left: 1.1vw;
           font-size: 0.9em;
+          font-weight: 500;
           color: #adadad;
+          justify-self: start;
+          align-self: center;
         }
 
-        .repos-list-item-stars{
-          display: inline-block;
-          grid-area: star;
-          align-self: center;
+        .repos-list-item-action{
+          color: #12c2e9;
+          grid-area: action;
+          font-weight: 500;
+          padding: 2px;
           justify-self: end;
+          align-self: center;
+          margin-right: 1.1vw;
+        }
+
+        .repos-list-item-action:hover{
+          background-color: #12c2e9;
+          color: white;
         }
 
 
