@@ -3,6 +3,7 @@ import "../css/style.css"
 import Head from 'next/head'
 import Header from "../components/header"
 import ReposList from "../components/reposList"
+import Footer from "../components/footer/footer"
 import fetch from 'isomorphic-unfetch'
 
 
@@ -13,6 +14,7 @@ const Index = ({repositories}) =>
             </Head>
             <Header></Header>
             <ReposList repos={repositories}></ReposList>
+            <Footer></Footer>
         </div>
 
 Index.getInitialProps = async ({ req }) => {
