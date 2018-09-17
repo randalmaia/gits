@@ -22,7 +22,7 @@ export default class extends React.Component {
             </div>
         </div>
 
-        <style jsx>{`
+        <style global jsx>{`
           * {
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
@@ -33,7 +33,11 @@ export default class extends React.Component {
           body{
             background-color: #f9f9f9;
           }
+        `}
 
+        </style>
+
+        <style jsx>{`
           .header-container{
             background: #12c2e9;
             background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);

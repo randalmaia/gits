@@ -1,5 +1,4 @@
 import "../node_modules/flexboxgrid/css/flexboxgrid.css"
-import "../css/style.css"
 import Head from 'next/head'
 import Header from "../components/header"
 import ReposList from "../components/reposList"
