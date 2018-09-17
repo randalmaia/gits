@@ -23,6 +23,4 @@ Index.getInitialProps = async ({ req }) => {
   return { repositories: json.items }
 }
 
-
-
 export default Index

@@ -1,3 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`With Enzyme App shows "Hello world!" 1`] = `<a />`;
+exports[`On render Footer shows the Footer layout 1`] = `
+<footer
+  className="jsx-53131117 footer"
+>
+  <div
+    className="jsx-53131117 row center-xs"
+  >
+    <div
+      className="jsx-53131117 col-xs-2"
+    >
+      <div
+        className="jsx-53131117 box footer-message"
+      >
+        <a
+          className="jsx-53131117"
+          href="http://twitter.com/randalmaia"
+          target="_blank"
+        >
+          made by randalmaia
+        </a>
+         ❤️
+      </div>
+    </div>
+  </div>
+</footer>
+`;
