@@ -7,7 +7,7 @@ function Footer(props){
       <div className="row center-xs">
         <div className="col-xs-2">
             <div className="box footer-message">
-                <a href="http://twitter.com/randalmaia" target="_blank">made by randalmaia</a> ❤️
+                <a href="https://twitter.com/randalmaia" target="_blank">made by randalmaia</a> ❤️
             </div>
         </div>
       </div>
