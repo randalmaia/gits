@@ -1,5 +1,8 @@
 import React from 'react'
 
+const fullIssueLink = (url) => {
+   url + '/issues?q=is%3Aissue+is%3Aopen+label%3A"good+first+issue"';
+}
 
 function ReposListItem(props){
   return (
@@ -7,9 +10,11 @@ function ReposListItem(props){
       <div className="repos-list-item-image-wrap">
         <img className="repos-list-item-image" src={props.repository.owner.avatar_url} />
       </div>
-      <a className="repos-list-item-name" target="_blank" href="{html_url}">{props.repository.name}</a>
+      <a className="repos-list-item-name" target="_blank" href={fullIssueLink(props.repository.html_url)}>
+        {props.repository.full_name}
+      </a>
       <span className="repos-list-item-description">{props.repository.description}</span>
-      <a href={props.repository.stargazers_count} className="repos-list-item-action">see good issues</a>
+      <a href={fullIssueLink(props.repository.html_url)} target="blank" className="repos-list-item-action">see good issues</a>
 
       <style jsx>{`
         .repos-list-item{

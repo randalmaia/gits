@@ -1,5 +1,6 @@
 import React from 'react'
 import ReposListItem from "../components/reposListItem"
+import Link from 'next/link'
 
 
 function ReposList(props){
@@ -11,8 +12,12 @@ function ReposList(props){
       <div className="row">
           <div className="col-xs-12 ">
             <div className="repos-list-container-links">
-              <a href="#" className="repos-list-container-link">Popular Javascript repos</a>
-              <a href="#" className="repos-list-container-link repos-list-container-title--disabled">Other good repos to contribute</a>
+              <Link href="/">
+                <a href="#" className="repos-list-container-link">Popular Javascript repos</a>
+              </Link>
+              <Link href="featured-repos">
+                <a href="#" className="repos-list-container-link repos-list-container-title--disabled">Featured repos to contribute</a>
+              </Link>
             </div>
           </div>
         </div>
