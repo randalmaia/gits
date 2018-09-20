@@ -1,20 +1,37 @@
 import React from 'react'
 
-const fullIssueLink = (url) => {
-   url + '/issues?q=is%3Aissue+is%3Aopen+label%3A"good+first+issue"';
-}
+
 
 function ReposListItem(props){
+  const fullIssueLink = (url) => {
+     url ;
+  }
+
   return (
     <li className="repos-list-item">
       <div className="repos-list-item-image-wrap">
-        <img className="repos-list-item-image" src={props.repository.owner.avatar_url} />
+        <img
+          className="repos-list-item-image"
+          src={props.repository.owner.avatar_url}
+          alt={'Avatar for' + props.repository.full_name}
+        />
       </div>
-      <a className="repos-list-item-name" target="_blank" href={fullIssueLink(props.repository.html_url)}>
+      <a
+        className="repos-list-item-name"
+        rel="noreferer"
+        target="_blank"
+        href={props.repository.html_url + '/issues?q=is%3Aissue+is%3Aopen+label%3A"good+first+issue"'}
+      >
         {props.repository.full_name}
       </a>
       <span className="repos-list-item-description">{props.repository.description}</span>
-      <a href={fullIssueLink(props.repository.html_url)} target="blank" className="repos-list-item-action">see good issues</a>
+      <a
+        href={props.repository.html_url + '/issues?q=is%3Aissue+is%3Aopen+label%3A"good+first+issue"'}
+        rel="noreferer"
+        target="blank"
+        className="repos-list-item-action">
+        see good issues
+      </a>
 
       <style jsx>{`
         .repos-list-item{
@@ -56,13 +73,13 @@ function ReposListItem(props){
           grid-area: description;
           font-size: 0.9em;
           font-weight: 500;
-          color: #adadad;
+          color: #585858;
           justify-self: start;
           align-self: center;
         }
 
         .repos-list-item-action{
-          color: #12c2e9;
+          color: #0064FF;
           grid-area: action;
           font-weight: 500;
           padding: 2px;

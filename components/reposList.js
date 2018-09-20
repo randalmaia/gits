@@ -36,7 +36,7 @@ function ReposList(props){
         }
 
         .repos-list-container-links{
-          border-bottom: 1px solid #adadad;
+          border-bottom: 1px solid #585858;
         }
 
         .repos-list-container-link{
@@ -55,7 +55,7 @@ function ReposList(props){
         }
 
         .repos-list-container-title--disabled{
-          color: #adadad;
+          color: #585858;
           text-decoration: none;
           border-bottom: none;
         }
