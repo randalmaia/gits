@@ -18,7 +18,7 @@ function ReposListItem(props){
       </div>
       <a
         className="repos-list-item-name"
-        rel="noreferer"
+        rel="noopener"
         target="_blank"
         href={props.repository.html_url + '/issues?q=is%3Aissue+is%3Aopen+label%3A"good+first+issue"'}
       >
@@ -27,7 +27,7 @@ function ReposListItem(props){
       <span className="repos-list-item-description">{props.repository.description}</span>
       <a
         href={props.repository.html_url + '/issues?q=is%3Aissue+is%3Aopen+label%3A"good+first+issue"'}
-        rel="noreferer"
+        rel="noopener"
         target="blank"
         className="repos-list-item-action">
         see good issues
