@@ -24,14 +24,15 @@ export default class extends React.Component {
 
         <style global jsx>{`
           * {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat', Helveltica, sans-serif;
             font-weight: 600;
             margin: 0;
             padding: 0;
           }
 
-          body{
-            background-color: #f9f9f9;
+          body, a{
+            background-color: #ffffff;
+            color: #585858;
           }
         `}
 
@@ -46,6 +47,7 @@ export default class extends React.Component {
           }
 
           .header-container-logo{
+            background: transparent;
             color: white;
             text-decoration: none;
             font-size: 2.5vw;

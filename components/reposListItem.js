@@ -35,8 +35,7 @@ function ReposListItem(props){
 
       <style jsx>{`
         .repos-list-item{
-          margin: 1vw 0;
-          background-color: white;
+          margin: 1.3vw 0;
           display: grid;
           grid-template-columns: 5% minmax(auto, max-content) minmax(auto, max-content) auto;
           grid-column-gap: 1.1vw;
@@ -59,7 +58,6 @@ function ReposListItem(props){
         .repos-list-item-name{
           display: inline-block;
           grid-area: name;
-          color: black;
           font-size: 1.2em;
           align-self: center;
         }
@@ -73,7 +71,6 @@ function ReposListItem(props){
           grid-area: description;
           font-size: 0.9em;
           font-weight: 500;
-          color: #585858;
           justify-self: start;
           align-self: center;
         }

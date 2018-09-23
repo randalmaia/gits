@@ -13,10 +13,7 @@ function ReposList(props){
           <div className="col-xs-12 ">
             <div className="repos-list-container-links">
               <Link href="/">
-                <a href="#" className="repos-list-container-link">Popular Javascript repos</a>
-              </Link>
-              <Link href="featured-repos">
-                <a href="#" className="repos-list-container-link repos-list-container-title--disabled">Featured repos to contribute</a>
+                <a href="#" className="repos-list-container-link">Popular Javascript repos from Github</a>
               </Link>
             </div>
           </div>
@@ -35,29 +32,14 @@ function ReposList(props){
           margin-top: 6vw;
         }
 
-        .repos-list-container-links{
-          border-bottom: 1px solid #585858;
-        }
-
         .repos-list-container-link{
           font-size: 1.2em;
           padding-bottom:10px;
           border-bottom: 3px solid black;
           display: inline-block;
-          color: #2B303A;
           margin-right: 1.5vw;
+          margin-bottom: 1.5vw;
           text-decoration: none;
-        }
-
-        .repos-list-container-link:hover{
-          color: #12c2e9;
-          border-bottom: 3px solid #12c2e9;
-        }
-
-        .repos-list-container-title--disabled{
-          color: #585858;
-          text-decoration: none;
-          border-bottom: none;
         }
 
         .repo-list{
