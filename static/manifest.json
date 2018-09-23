@@ -6,5 +6,12 @@
   "background_color": "#317EFB",
   "description": "Good issues to you start in the open source projects world.",
   "start_url": "/",
-  "orientation": "landscape"
+  "orientation": "landscape",
+  "icons": [
+    {
+      "src": "favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ]
 }

@@ -8,10 +8,10 @@ export default class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" />
           <link rel="manifest" href="static/manifest.json" />
+          <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico"/>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <meta name="theme-color" content="#317EFB"/>
           <meta name="Description" content="Good issues to you start in the open source projects world."/>
-
 
         </Head>
         <body>
