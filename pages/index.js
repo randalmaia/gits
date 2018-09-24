@@ -5,7 +5,6 @@ import ReposList from "../components/reposList"
 import Footer from "../components/footer/footer"
 import fetch from 'isomorphic-unfetch'
 
-
 const Index = ({repositories}) =>
         <div>
             <Head>
@@ -14,7 +13,9 @@ const Index = ({repositories}) =>
             <Header></Header>
             <ReposList repos={repositories}></ReposList>
             <Footer></Footer>
+
         </div>
+
 
 Index.getInitialProps = async ({ req }) => {
   const res = await fetch('https://api.github.com/search/repositories?q=+language:javascript&sort=stars&order=desc')

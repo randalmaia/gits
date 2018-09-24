@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { GoLinkExternal } from 'react-icons/go';
 
 
 function ReposListItem(props){
@@ -30,7 +30,12 @@ function ReposListItem(props){
         rel="noopener"
         target="blank"
         className="repos-list-item-action">
-        see good issues
+
+        see issues
+
+        <span className="repos-list-item-action-icon">
+          <GoLinkExternal/>
+        </span>
       </a>
 
       <style jsx>{`
@@ -69,7 +74,7 @@ function ReposListItem(props){
           overflow: hidden;
           text-overflow: ellipsis;
           grid-area: description;
-          font-size: 0.9em;
+          font-size: 0.8em;
           font-weight: 500;
           justify-self: start;
           align-self: center;
@@ -83,6 +88,14 @@ function ReposListItem(props){
           justify-self: end;
           align-self: center;
           margin-right: 1.1vw;
+        }
+
+        .repos-list-item-action-icon{
+          display: inline-block;
+          vertical-align: middle;
+          line-height: normal;
+          font-size:0.8em;
+          margin-left: 3px;
         }
 
         .repos-list-item-action:hover{
