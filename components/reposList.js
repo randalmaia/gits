@@ -9,8 +9,8 @@ function ReposList(props){
   );
   return (
     <div className="container-fluid repos-list-container">
-      <div className="row">
-          <div className="col-xs-12 ">
+      <div className="row center-xs">
+          <div className="col-xs-6">
             <div className="repos-list-container-links">
               <Link href="/">
                 <a href="#" className="repos-list-container-link">Popular Javascript repos from Github</a>
@@ -19,8 +19,8 @@ function ReposList(props){
           </div>
         </div>
 
-      <div className="row">
-        <div className="col-xs-12">
+      <div className="row center-xs">
+        <div className="col-xs-6">
           <ul className="repo-list">
             { reposListComps }
           </ul>

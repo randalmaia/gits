@@ -15,14 +15,13 @@ function Footer(props){
         .footer{
           padding: 2vw;
           margin-top: 3vw;
-          background: #12c2e9;
-          background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-          background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);;
         }
 
         .footer-message a{
           font-size: 0.8em;
           text-decoration: none;
+          background: transparent;
           color: white;
           font-weight: 400;
         }

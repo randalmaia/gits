@@ -40,9 +40,7 @@ export default class extends React.Component {
 
         <style jsx>{`
           .header-container{
-            background: #12c2e9;
-            background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-            background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
           }
 

@@ -84,10 +84,12 @@ function ReposListItem(props){
           color: #0064FF;
           grid-area: action;
           font-weight: 500;
-          padding: 2px;
+          padding: 2px 2px 0;
           justify-self: end;
           align-self: center;
           margin-right: 1.1vw;
+          border-bottom: 1px dotted #0064FF;
+          text-decoration: none;
         }
 
         .repos-list-item-action-icon{
