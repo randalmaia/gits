@@ -2,7 +2,7 @@
 
 Gits is a minimalistic site to find good issues to contribute in OSS world.
 
-At the moment hosted on [Gits](https://gits-gits.wedeploy.io/)
+At the moment hosted on [Gits](https://gits.wedeploy.io/)
 
 ## Installation
 
